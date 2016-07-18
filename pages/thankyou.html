@@ -1,0 +1,30 @@
+<div ng-controller = "thankyou" class="row" >
+  <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
+    <div class="f1 thankyou">
+      <h1>Thank You {{username}}</h1>
+      <p>
+        <span class="thankyou-heart text-center">
+          <i class="fa fa-heart"></i>
+        </span>
+        <br/>
+        <strong>You have successfully made a donation about </strong><em>{{time}}</em>
+      </p>
+      <div class=" thankyou-data">
+          <div class="thankyou-table">
+              <div class="table-header">
+                    <p class="table-title">Donation of</p>
+                    <p class="table-rate"><sup>{{userCurrency}}</sup> {{userAmt}}</p>
+              </div>
+              <div class="table-list">
+                  <ul>
+                    <li><span>Checkout ID : </span>{{userCheckoutId}}</li>
+                    <li><span>Transaction NDC : </span>{{userNdc}}</li>
+                    <li><span>Build Number: </span>{{userBuildNumber}}</li>
+                 </ul>
+              </div>
+          </div>
+      </div>
+      <a class="btn btn-success" href="#">Donate Again</a>
+    </div>
+  </div>
+</div>
